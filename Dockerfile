@@ -4,7 +4,7 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0.202
 LABEL maintainer="Dominik Kotecki" \
     app_name="dotnet-sonar"
 
-ENV SONAR_SCANNER_MSBUILD_VERSION=5.5.3 \
+ENV SONAR_SCANNER_MSBUILD_VERSION=5.5.3.43281 \
     DOTNETCORE_SDK=6.0.202 \
     DOTNETCORE_RUNTIME=6.0.0 \
     NETAPP_VERSION=net5.0 \
