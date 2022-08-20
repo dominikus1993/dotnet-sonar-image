@@ -26,8 +26,6 @@ jobs:
           dotnet-version: 6.0.x
       - name: Restore Tools
         run: dotnet tool restore
-      - name: Restore dependencies
-        run: dotnet restore
       - name: Generate DockerFile
         run: dotnet fsi image.fsx
       - name: Build image
