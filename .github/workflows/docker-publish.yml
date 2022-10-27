@@ -9,7 +9,7 @@ on:
       - v1
       - v1.*
   schedule:
-    - cron: "00 11 */10 * *"
+    - cron: "00 12 */10 * *"
 
 
 env:
