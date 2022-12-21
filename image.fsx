@@ -79,7 +79,8 @@ let runCleanUp = $"""apt-get -q autoremove \
     && apt-get -q clean -y \
     && rm -rf /var/lib/apt/lists/* /var/cache/apt/*.bin"""
 
-let installSonarScannerCommand = installSonarScanner().Result
+let installSonarScannerCommand = 
+    installSonarScanner().Result
 
 let dockerSpecBuilder = dockerfile {
     from $"mcr.microsoft.com/dotnet/sdk:{sdk}"
